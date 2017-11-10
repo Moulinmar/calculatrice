@@ -39,9 +39,10 @@ namespace Calculatrice
                     default:
                         Console.WriteLine("Opération non reconnue par le système");
                         Console.WriteLine("Veuillez saisir à nouveau l'opérateur [+ - * / ^]");
+                        isOpIncorrect = true;
                         break;
                     case "+":
-                        dblRep = 0;
+                        dblRep = Outils.Addition(dblVal1,dblVal2);
                         break;
                     case "-":
                         dblRep = 0;
