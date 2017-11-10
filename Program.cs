@@ -43,6 +43,7 @@ namespace Calculatrice
                         break;
                     case "+":
                         dblRep = Outils.Addition(dblVal1,dblVal2);
+                        Console.Write("" + dblRep.ToString());
                         break;
                     case "-":
                         dblRep = 0;
@@ -55,7 +56,7 @@ namespace Calculatrice
                         break;
                 }
             }
-            Console.Write(dblVal1.ToString());
+            
 
             Console.ReadKey();
         }
